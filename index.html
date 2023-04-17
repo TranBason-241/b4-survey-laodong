@@ -343,7 +343,22 @@
                       <label for="javascript"
                         >Mua rồi dùng mặt bằng để kinh doanh</label
                       >
-
+                      <div class="more-ans-group" style="display: flex">
+                        <input
+                          type="radio"
+                          id="q_0_5"
+                          class="more-ans-radio"
+                          name="fav_language"
+                          value="more-ans"
+                        />
+                        <textarea
+                          maxlength="1000"
+                          id="more-ans-input"
+                          class="more-ans-input more-ans-input-line"
+                          placeholder="Khác (vui lòng nêu rõ)"
+                        ></textarea>
+                      </div>
+                      <p class="counter">0<span>/1000</span></p>
                       <p class="form-message"></p>
                     </div>
                   </div>
@@ -470,25 +485,14 @@
                             value="more-ans"
                           />
 
-                          <!-- <input
-                      maxlength="10"
-                      class="more-ans-input"
-                      id="more-ans-input"
-                      disabled
-                      type="text"
-                      placeholder="Khác"
-                    /> -->
                           <textarea
                             maxlength="1000"
                             id="more-ans-input"
-                            class="more-ans-input"
-                            disabled
+                            class="more-ans-input more-ans-input-line"
                             placeholder="Khác (vui lòng nêu rõ)"
                           ></textarea>
                         </div>
-                        <p style="display: none" class="counter">
-                          0<span>/1000</span>
-                        </p>
+                        <p class="counter">0<span>/1000</span></p>
                       </div>
 
                       <p class="form-message"></p>
@@ -534,26 +538,14 @@
                             name="q-6"
                             value="more-ans"
                           />
-
-                          <!-- <input
-                      maxlength="10"
-                      class="more-ans-input"
-                      id="more-ans-input"
-                      disabled
-                      type="text"
-                      placeholder="Khác"
-                    /> -->
                           <textarea
                             maxlength="1000"
                             id="more-ans-input"
-                            class="more-ans-input"
-                            disabled
+                            class="more-ans-input more-ans-input-line"
                             placeholder="Khác (vui lòng nêu rõ)"
                           ></textarea>
                         </div>
-                        <p style="display: none" class="counter">
-                          0<span>/1000</span>
-                        </p>
+                        <p class="counter">0<span>/1000</span></p>
                       </div>
 
                       <p class="form-message"></p>
@@ -585,9 +577,7 @@
                         </div>
                         <p class="form-message"></p>
                       </div>
-                      <p style="display: block" class="counter">
-                        0<span>/1000</span>
-                      </p>
+                      <p class="counter">0<span>/1000</span></p>
                     </div>
                   </div>
                 </div>
@@ -601,18 +591,19 @@
                   <h2>section_2</h2>
                 </div>
                 <div class="btn_nav_area">
-                  <button id="btn-nav-back" class="btn btn-nav-back">
-                    Quay lại
-                  </button>
-                  <button id="btn-nav-next" class="btn btn-nav-next">
-                    Tiếp tục
-                  </button>
                   <button class="btn-submit form-submit btn-nav-next">
                     ĐĂNG KÝ LÁI THỬ
                   </button>
                 </div>
               </form>
-
+              <div class="btn_nav_area">
+                <button id="btn-nav-back" class="btn btn-nav-back">
+                  Quay lại
+                </button>
+                <button id="btn-nav-next" class="btn btn-nav-next">
+                  Tiếp tục
+                </button>
+              </div>
               <button id="sweet">Sweetalert</button>
             </div>
           </div>
