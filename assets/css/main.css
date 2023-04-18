@@ -44,7 +44,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 140%;
-    color: #222222;
+    color: #333333;
     margin-bottom: 5px; }
   .card .header_area {
     background-color: #9f224e;
@@ -55,7 +55,7 @@
 
 .form-group {
   width: 100%;
-  padding: 0 15px 15px 15px; }
+  padding: 15px 15px 15px 15px; }
   .form-group label {
     font-size: 16px; }
 
@@ -83,7 +83,8 @@ html {
 
 .px-dropdown {
   position: relative;
-  height: var(--px-dropdown-height); }
+  height: var(--px-dropdown-height);
+  width: 50%; }
 
 .px-dropdown-input {
   width: 100%;
@@ -140,7 +141,8 @@ html {
 .px-dropdown.active .px-dropdown-panel {
   top: calc(100% + 4px);
   opacity: 1;
-  pointer-events: auto; }
+  pointer-events: auto;
+  z-index: 10; }
 
 .px-dropdown-panel ul {
   list-style: none; }
@@ -287,7 +289,8 @@ input[type="number"] {
     margin-bottom: 0 !important; }
 
 .btn_nav_area {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 50px; }
 
 .btn-nav-back,
 .btn-nav-next {
@@ -316,5 +319,18 @@ input[type="number"] {
   border: 1px solid #9f224e;
   color: #ffffff;
   background-color: #9f224e; }
+
+.card-sub {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  padding: 20px 20px 10px 20px; }
+  .card-sub p {
+    padding-bottom: 10px; }
+
+.area-input {
+  width: 100% !important; }
 
 /*# sourceMappingURL=main.css.map */

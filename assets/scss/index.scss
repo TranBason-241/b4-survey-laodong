@@ -49,7 +49,7 @@
         font-size: 18px;
         line-height: 140%;
 
-        color: #222222;
+        color: #333333;
         margin-bottom: 5px;
     }
     .header_area {
@@ -62,7 +62,7 @@
 }
 .form-group {
     width: 100%;
-    padding: 0 15px 15px 15px;
+    padding: 15px 15px 15px 15px;
     label {
         font-size: 16px;
     }
@@ -103,6 +103,7 @@ html {
     position: relative;
     // width: var(--px-dropdown-width);
     height: var(--px-dropdown-height);
+    width: 50%;
 }
 
 .px-dropdown-input {
@@ -167,6 +168,7 @@ html {
     top: calc(100% + 4px);
     opacity: 1;
     pointer-events: auto;
+    z-index: 10;
 }
 
 .px-dropdown-panel ul {
@@ -346,6 +348,7 @@ input[type="number"] {
 
 .btn_nav_area {
     text-align: center;
+    padding-bottom: 50px;
 }
 .btn-nav-back,
 .btn-nav-next {
@@ -375,4 +378,19 @@ input[type="number"] {
     border: 1px solid #9f224e;
     color: #ffffff;
     background-color: #9f224e;
+}
+
+.card-sub {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    padding: 20px 20px 10px 20px;
+    p {
+        padding-bottom: 10px;
+    }
+}
+.area-input {
+    width: 100% !important;
 }
