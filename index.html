@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
+    <!-- // meta show on link share  -->
+
+    <meta property="og:title" content="Khảo sát tình hình kinh doanh quý I & triễn vọng đến cuối năm 2023" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta
+      property="og:description"
+      content="Khảo sát này dành cho đại diện các doanh nghiệp, do Ban Nghiên cứu Phát triển kinh tế tư nhân (Ban IV, thuộc Hội đồng tư vấn cải cách thủ tục hành chính của Thủ tướng) và Báo VnExpress thực hiện, từ ngày 13/4 đến 23/4/2023"
+    />
+    <meta property="og:image" content="https://partner.fptad.com/vbrand/survey/kinh-doanh-2023/assets/images/share.png" />
+    <meta property="og:image:alt" content="Khảo sát tình hình kinh doanh quý I" />
+
     <!-- Core stylesheet -->
     <link type="text/css" rel="stylesheet" href="assets/css/fontawesome.min.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/general_v2_min.css" />
@@ -28,30 +40,6 @@
         <div class="container">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=""><span class="sr-only">Toggle navigation</span><span class="toggle-icon"></span></button>
           <a href="https://vnexpress.net/" class="logo" id="logo"><img src="assets/images/logo-150x29.png" alt="VnExpress" class="pc-only img-100" /></a>
-          <div class="block-right">
-            <a href="#box_comment" class="button-comments count_comment" data-target="">
-              <i class="fas fa-comment"></i>
-              <span class="counter">Bình luận</span>
-            </a>
-            <ul class="list-inline social">
-              <li>
-                <a href="javascript:void(0);" class="si-facebook shape-circle social-item fb_share" data-type="fb_share"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="javascript:void(0);" class="si-twitter shape-circle social-item tw_share" data-type="tw_share"><i class="fab fa-twitter"></i></a>
-              </li>
-            </ul>
-            <form action="https://timkiem.vnexpress.net/" method="get" class="block-right">
-              <div class="search">
-                <input autocomplete="off" type="text" class="search-input" placeholder="Tìm kiếm" maxlength="80" name="q" />
-                <span class="search-btn">
-                  <button type="submit">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </span>
-              </div>
-            </form>
-          </div>
         </div>
       </div>
       <!-- End Top Nav -->
@@ -166,9 +154,10 @@
           <div class="my-container">
             <div class="form-container">
               <div class="social-share">
-                <img src="assets/images/facebook.png" id="fb" alt="" />
-                <img src="assets/images/twiter.png" id="twiter" alt="" />
-                <img src="assets/images/link.png" id="link-copy" alt="" />
+                <p class="d-none">Chia sẻ</p>
+                <img src="assets/images/facebook.png" class="fb" alt="" />
+                <img src="assets/images/twiter.png" class="twiter" alt="" />
+                <img src="assets/images/link.png" class="link-copy" alt="" />
               </div>
               <div class="card card-header">
                 <p>Khảo sát nhanh khó khăn về vấn đề lao động liên quan đến nhu cầu mua nhà ở xã hội và rút BHXH một lần hiện nay</p>
@@ -188,6 +177,19 @@
                     <div class="header_area">
                       <p class="header">Thông tin người lao động</p>
                     </div>
+
+                    <div class="form-group" name="q-3" id="q-3">
+                      <p class="question">
+                        3. Số Tiền
+                        <span style="color: red">*</span>
+                      </p>
+                      <div class="px-app px-dropdown">
+                        <div class="px-dropdown-input">
+                          <input type="text" rules="required" class="form-control money" name="money" placeholder="Nhập số tiền" />
+                        </div>
+                      </div>
+                      <p class="form-message"></p>
+                    </div>
                     <div class="form-group" name="q-1" id="q-1">
                       <p class="question">Tỉnh/thành phố nơi Anh/Chị đang ở?<span style="color: red">*</span></p>
                       <div class="px-app px-dropdown">
@@ -202,64 +204,26 @@
                       </div>
                       <p class="form-message"></p>
                     </div>
-                    <!-- <div
-                      class="form-group question_nav"
-                      id="q-0"
-                      name="fav_language"
-                      groupRadioRules="required"
-                    >
+                    <!-- <div class="form-group question_nav" id="q-0" name="fav_language" groupRadioRules="required">
                       <p class="question">
                         1. Bạn đang có nhu cầu mua bất động sản với mục đích gì?
                         <span style="color: red">*</span>
                       </p>
 
-                      <input
-                        type="radio"
-                        id="q_0_1"
-                        name="fav_language"
-                        value="Để ở"
-                      />
+                      <input type="radio" id="q_0_1" name="fav_language" value="Để ở" />
                       <label for="html">Để ở</label><br />
 
-                      <input
-                        type="radio"
-                        id="q_0_2"
-                        name="fav_language"
-                        value="Đầu tư kỳ vọng tăng giá"
-                      />
+                      <input type="radio" id="q_0_2" name="fav_language" value="Đầu tư kỳ vọng tăng giá" />
                       <label for="css">Đầu tư kỳ vọng tăng giá</label><br />
 
-                      <input
-                        type="radio"
-                        id="q_0_3"
-                        name="fav_language"
-                        value="Đầu tư để cho thuê"
-                      />
+                      <input type="radio" id="q_0_3" name="fav_language" value="Đầu tư để cho thuê" />
                       <label for="javascript">Đầu tư để cho thuê</label><br />
 
-                      <input
-                        type="radio"
-                        id="q_0_4"
-                        name="fav_language"
-                        value="Mua rồi dùng mặt bằng để kinh doanh"
-                      />
-                      <label for="javascript"
-                        >Mua rồi dùng mặt bằng để kinh doanh</label
-                      >
+                      <input type="radio" id="q_0_4" name="fav_language" value="Mua rồi dùng mặt bằng để kinh doanh" />
+                      <label for="javascript">Mua rồi dùng mặt bằng để kinh doanh</label>
                       <div class="more-ans-group" style="display: flex">
-                        <input
-                          type="radio"
-                          id="q_0_5"
-                          class="more-ans-radio"
-                          name="fav_language"
-                          value="more-ans"
-                        />
-                        <textarea
-                          maxlength="1000"
-                          id="more-ans-input"
-                          class="more-ans-input more-ans-input-line"
-                          placeholder="Khác (vui lòng nêu rõ)"
-                        ></textarea>
+                        <input type="radio" id="q_0_5" class="more-ans-radio" name="fav_language" value="more-ans" />
+                        <textarea maxlength="1000" id="more-ans-input" class="more-ans-input more-ans-input-line" placeholder="Khác (vui lòng nêu rõ)"></textarea>
                       </div>
                       <p class="counter">0<span>/1000</span></p>
                       <p class="form-message"></p>
@@ -300,13 +264,7 @@
                         Anh/Chị đang ở nhà/căn hộ được xây dựng thuộc nhóm nào?
                         <span style="color: red">*</span>
                       </p>
-                      <input
-                        type="radio"
-                        id="q-3-1"
-                        name="q-3"
-                        value="Bằng vật liệu bền chắc (gạch, ngói, săt, thép, gỗ, bê
-                        tông...)"
-                      />
+                      <input type="radio" id="q-3-1" name="q-3" value="Bằng vật liệu bền chắc (gạch, ngói, săt, thép, gỗ, bê tông...)" />
                       <label for="html">Bằng vật liệu bền chắc (gạch, ngói, săt, thép, gỗ, bê tông...)</label><br />
 
                       <input
@@ -393,7 +351,7 @@
                     </div>
                   </div>
                   <div class="card">
-                    <div class="form-group one-info" numberSelected="2" name="q-8" id="q-8" groupCheckboxRules="required">
+                    <div class="form-group one-info" numberSelected="1000" name="q-8" id="q-8" groupCheckboxRules="required">
                       <p class="question">Anh/Chị đã có hoặc dự định tham gia đào tạo thuộc nhóm nào sau đây?<span style="color: red">*</span></p>
                       <div name="q-8">
                         <input type="checkbox" id="q-8-1" name="q-8" value="Đã có Chứng chỉ nghề có giá trị quốc tế (ví dụ: ACCA, CFA, PMP, CRISC, CISSP,...)" />
@@ -528,11 +486,7 @@
                   </div>
                   <div class="card">
                     <div class="form-group question_nav" id="q-11" name="q-11" groupRadioRules="required">
-                      <p class="question">
-                        Nơi Anh/Chị đã hoặc đang làm việc thuộc ngành nghề nào?
-                        <span style="color: red">*</span>
-                      </p>
-
+                      <p class="question">Nơi Anh/Chị đã hoặc đang làm việc thuộc ngành nghề nào?<span style="color: red">*</span></p>
                       <input type="radio" id="q-11-1" name="q-11" value="Nông nghiệp, Lâm nghiệp và Thủy sản" />
                       <label for="html">Nông nghiệp, Lâm nghiệp và Thủy sản</label><br />
 
@@ -592,18 +546,15 @@
                     </div>
                   </div>
                 </div>
-
                 <!-- -----End section 1_3  -->
-
                 <div id="section_2" class="d-none" isGet="false">
                   <h2>section_2</h2>
                 </div>
-                <div class="submit_area">
-                  <button class="btn-submit form-submit btn-nav-next">Gửi khảo sát</button>
-                </div>
+                <div class="submit_area"></div>
               </form>
               <div class="btn_nav_area">
-                <button id="btn-nav-back" class="btn btn-nav-back">Quay lại</button>
+                <button class="btn-submit form-submit btn-nav-next buttonload">Gửi khảo sát<i id="icon-loading" class="fa fa-spinner fa-spin"></i></button>
+                <button id="btn-nav-back" class="d-none btn btn-nav-back">Quay lại</button>
                 <button id="btn-nav-next" class="btn btn-nav-next">Tiếp tục</button>
               </div>
               <!-- <button id="sweet">Sweetalert</button> -->
