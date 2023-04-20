@@ -23,6 +23,9 @@
   gap: 10px;
   cursor: pointer; }
 
+.card.invalid {
+  border: 1px solid red; }
+
 .card {
   margin-bottom: 20px;
   background-color: white;
@@ -440,7 +443,13 @@ input[type="number"] {
   .card-sub,
   #survey-form {
     margin-left: 20px;
-    margin-right: 20px; } }
+    margin-right: 20px; }
+
+  .px-dropdown {
+    width: 100%; }
+
+  .soLanRut .input-soLanRut {
+    margin-right: 68%; } }
 @media (max-width: 414px) {
   .card-header {
     font-size: 18px;
