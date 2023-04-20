@@ -160,9 +160,13 @@
               <img src="assets/images/twiter.png" class="twiter" alt="" />
               <img src="assets/images/link.png" class="link-copy" alt="" />
             </div>
-            <div class="card card-header">
-              <p>Khảo sát nhanh khó khăn về vấn đề lao động liên quan đến nhu cầu mua nhà ở xã hội và rút BHXH một lần
-                hiện nay</p>
+            <div class="card card-header pc">
+              <p>Khảo sát về việc làm, nhu cầu mua nhà và </br>
+                rút bảo hiểm xã hội một lần</p>
+            </div>
+            <div class="card card-header mobile">
+              <p>Khảo sát về việc làm, nhu cầu </br> mua nhà và 
+                rút bảo hiểm xã hội</br> một lần</p>
             </div>
             <div class="card card-sub">
               <p>Khảo sát do Ban Nghiên cứu Phát triển Kinh tế tư nhân (Ban IV) phối hợp với VnExpress thực hiện từ ngày
@@ -177,7 +181,7 @@
             </div>
             <form method="POST" class="form" id="survey-form" target="dummyframe">
               <!-- // start - Section -1  -->
-              <div id="section_1" isGet="true" class="d-none">
+              <div id="section_1" isGet="true" class="">
                 <div class="card">
                   <div class="header_area">
                     <p class="header">Tình hình việc làm</p>
@@ -241,16 +245,14 @@
               </div>
               <!-- // end - Section - 1  -->
               <!-- // start - Section -2.1  -->
-              <div id="section_2_1" class="" isGet="false">
+              <div id="section_2_1" class="d-none" isGet="false">
                 <div class="card">
                   <div class="header_area">
                     <p class="header">Không có việc làm</p>
                   </div>
                   <div class="form-group" id="q-2" name="q-2" groupRadioRules="required">
-                    <p class="question">
-                      Bạn không có việc vì lý do nào
-                      <span style="color: red">*</span>
-                    </p>
+                    <p class="question">Bạn không có việc vì lý do nào?<span style="color: red">*</span></p>
+                    
 
                     <input type="radio" id="q-2-1" name="q-2" value="Cơ sở sản xuất kinh doanh tạm ngừng kinh doanh" />
                     <label for="html">Cơ sở sản xuất kinh doanh tạm ngừng kinh doanh</label>
@@ -281,10 +283,7 @@
                 </div>
                 <div class="card">
                   <div class="form-group" id="q-3" name="q-3" groupRadioRules="required">
-                    <p class="question">
-                      Bạn thuộc nhóm Nghề nghiệp nào trước khi mất việc
-                      <span style="color: red">*</span>
-                    </p>
+                    <p class="question">Bạn thuộc nhóm Nghề nghiệp nào trước khi mất việc?<span style="color: red">*</span></p>
                     <input type="radio" id="q-3-1" name="q-3" value="Lực lượng vũ trang (quân đội, công an, cơ yếu)" />
                     <label for="html">Lực lượng vũ trang (quân đội, công an, cơ yếu)</label>
                     <br />
@@ -335,9 +334,9 @@
 
                 <div class="card">
                   <div class="form-group" id="q-4" name="q-4" groupRadioRules="required">
-                    <p class="question">Bạn ĐÃ làm việc cho loại hình tổ chức nào trước khi không có việc làm?
-                      <span style="color: red">*</span>
-                    </p>
+                    <p class="question">Bạn ĐÃ làm việc cho loại hình tổ chức nào trước khi không có việc làm?<span style="color: red">*</span></p>
+                      
+                    
                     <input type="radio" id="q-4-1" name="q-4" value="Lao động tự do không thuộc tổ chức nào" />
                     <label for="html">Lao động tự do không thuộc tổ chức nào</label>
                     <br />
@@ -377,7 +376,7 @@
 
                 <div class="card">
                   <div class="form-group" id="q-5" name="q-5" groupRadioRules="required">
-                    <p class="question">Bạn ĐÃ có giao kết hợp đồng lao động như thế nào<span style="color: red">*</span></p>
+                    <p class="question">Bạn ĐÃ có giao kết hợp đồng lao động như thế nào?<span style="color: red">*</span></p>
                     <input type="radio" id="q-5-1" name="q-5" value="Tự lao động/kinh doanh không có hợp đồng lao động" />
                     <label for="html">Tự lao động/kinh doanh không có hợp đồng lao động</label>
                     <br />
@@ -446,7 +445,7 @@
                     <div class="px-app px-dropdown">
                       <input class="px-dropdown-value" type="hidden" />
                       <div class="px-dropdown-input">
-                        <input type="text" readonly rules="required" class="form-control" name="dv" />
+                        <input class="input-city" type="text" readonly rules="required" class="form-control" name="dv" />
                         <i class="fa fa-caret-down icon"></i>
                       </div>
                       <div class="px-dropdown-panel">
@@ -460,7 +459,7 @@
 
                 <div class="card">
                   <div class="form-group one-info" numberSelected="1000" name="q-8" id="q-8" groupCheckboxRules="required">
-                    <p class="question">Bạn có dự định tìm việc ở tỉnh, thành phố nào<span style="color: red">*</span></p>
+                    <p class="question">Bạn có dự định tìm việc ở tỉnh, thành phố nào?<span style="color: red">*</span></p>
                     <div name="q-8">
                       <input type="checkbox" id="q-8-1" name="q-8" value="Nơi có việc làm trước đây" />
                       <label for="vehicle1">Nơi có việc làm trước đây</label>
@@ -525,7 +524,7 @@
 
                 <div class="card">
                   <div class="form-group one-info" numberSelected="1000" name="q-10" id="q-10" groupCheckboxRules="required">
-                    <p class="question">Nếu bây giờ có việc làm, bạn sẽ đề nghị Doanh nghiệp/tổ chức điều gì<span style="color: red">*</span></p>
+                    <p class="question">Nếu bây giờ có việc làm, bạn sẽ đề nghị Doanh nghiệp/tổ chức điều gì?<span style="color: red">*</span></p>
                     <div name="q-10">
                       <input type="checkbox" id="q-10-1" name="q-10" value="Không cần hợp đồng lao động" />
                       <label for="vehicle1">Không cần hợp đồng lao động</label>
@@ -746,29 +745,29 @@
 
 
               <!-- // start - Section - 3.1  -->
-              <div id="section_3_1" class="" isGet="false">
+              <div id="section_3_1" class="d-none" isGet="false">
                 <div class="card">
                   <div class="header_area">
                     <p class="header">Nhu cầu rút bảo hiểm xã hội một lần</p>
                   </div>
-                  <div class="form-group" id="q-15" name="q-15" groupRadioRules="required">
-                    <p class="question">Bạn từng rút bảo hiểm xã hội một lần chưa?
-                      <span style="color: red">*</span>
-                    </p>
-
+                  <div class="form-group question_nav" id="q-15" name="q-15" groupRadioRules="required">
+                    <p class="question">Bạn từng rút bảo hiểm xã hội một lần chưa?<span style="color: red">*</span></p>
+                      
+                    
                     <input type="radio" id="q-15-1" name="q-15" value="Chưa, để đợi đến tuổi về hưu có khoản lương hưu hàng tháng" />
                     <label for="html">Chưa, để đợi đến tuổi về hưu có khoản lương hưu hàng tháng</label>
                     <br />
                     <input type="radio" id="q-15-2" name="q-15" value="Chưa, nhưng đang cân nhắc" />
                     <label for="css">Chưa, nhưng đang cân nhắc</label>
                     <br />
-                    <div class="more-ans-group" style="display: flex">
-                      <input type="radio" id="q-15-7" class="more-ans-radio" name="q-15" value="more-ans" />
-                      <p>Rồi. Ghi rõ thêm số lần rút </p>
-                      <textarea maxlength="1000" id="more-ans-input" class="more-ans-input more-ans-input-line" placeholder="Khác (vui lòng nêu rõ)"></textarea>
+
+                    <div class="more-ans-group soLanRut" style="display: flex">
+                      <input type="radio" id="q-15-3" class="more-ans-radio item-soLanRut" name="q-15" value="more-ans" />
+                      <label class="item-soLanRut" for="css">Ghi rõ số lần rút</label><br />
+                      <input name="SoLanRut" type="number" min="1" max="10" id="more-ans-input" class="more-ans-input more-ans-input-line input-soLanRut" placeholder="Số lần"></input>
                     </div>
-                    <p class="counter">0<span>/1000</span></p>
-                    <p class="form-message"></p>
+                    <p class="counter d-none">0<span>/1000</span></p>
+                    <p class="form-message" style="margin-left: 20px;"></p>
                   </div>
                 </div>
 
@@ -776,16 +775,15 @@
               </div>
               <!-- // end - Section - 3.1  -->
 
-              <!-- // start - Section - 3.2  -->
-              <div id="section_3_2" class="" isGet="false">
+               <!-- // start - Section - 3.2  -->
+              <div id="section_3_2" class="d-none" isGet="false">
                 <div class="card">
                   <div class="header_area">
                     <p class="header">Nhu cầu rút bảo hiểm xã hội một lần</p>
                   </div>
                   <div class="form-group" id="q-16" name="q-16" groupRadioRules="required">
-                    <p class="question">Nếu từng rút BHXH rồi, vui lòng nêu tình trạng việc làm của bạn lúc rút?
-                      <span style="color: red">*</span>
-                    </p>
+                    <p class="question">Nếu từng rút BHXH rồi, vui lòng nêu tình trạng việc làm của bạn lúc rút?<span style="color: red">*</span></p>
+                      
                     <input type="radio" id="q-16-1" name="q-16" value="Vừa mất việc" />
                     <label for="html">Vừa mất việc</label>
                     <br />
@@ -802,10 +800,7 @@
 
                 <div class="card">
                   <div class="form-group" id="q-17" name="q-17" groupRadioRules="required">
-                    <p class="question">
-                      Vì sao bạn rút bảo hiểm xã hội một lần?
-                      <span style="color: red">*</span>
-                    </p>
+                    <p class="question">Vì sao bạn rút bảo hiểm xã hội một lần?<span style="color: red">*</span></p>
                     <input type="radio" id="q-17-1" name="q-17" value="Mất việc, không có nguồn thu nhập bù đắp" />
                     <label for="html">Mất việc, không có nguồn thu nhập bù đắp</label>
                     <br />
@@ -829,10 +824,10 @@
 
                 <div class="card">
                   <div class="form-group" id="q-18" name="q-18" groupRadioRules="required">
-                    <p class="question">Nếu từng rút BHXH một lần, bạn có muốn đóng lại số tiền trên để sau này được
-                      hưởng chế độ không?
-                      <span style="color: red">*</span>
-                    </p>
+                    <p class="question">Nếu từng rút BHXH một lần, bạn có muốn đóng lại số tiền trên để sau này được hưởng chế độ không?<span style="color: red">*</span></p>
+                      
+                      
+                    
                     <input type="radio" id="q-18-1" name="q-18" value="Không, nếu có tiền sẽ gửi tiết kiệm" />
                     <label for="html">Không, nếu có tiền sẽ gửi tiết kiệm</label>
                     <br />
@@ -848,10 +843,8 @@
 
                 <div class="card">
                   <div class="form-group" id="q-19" name="q-19" groupRadioRules="required">
-                    <p class="question">
-                      Nơi bạn đã hoặc đang làm việc thuộc ngành nghề nào?
-                      <span style="color: red">*</span>
-                    </p>
+                    <p class="question">Nơi bạn đã hoặc đang làm việc thuộc ngành nghề nào?<span style="color: red">*</span></p>
+                      
                     <input type="radio" id="q-19-1" name="q-19" value="Nông nghiệp, Lâm nghiệp và Thủy sản" />
                     <label for="html">Nông nghiệp, Lâm nghiệp và Thủy sản</label>
                     <br />
@@ -915,11 +908,320 @@
               </div>
               <!-- // end - Section - 3.2  -->
 
+
+               <!-- // start - Section - 4  -->
+ 
+              <div id="section_4" class="d-none" isGet="false">
+                <div class="card">
+                  <div class="header_area">
+                    <p class="header">Nhu cầu mua nhà ở xã hội</p>
+                  </div>
+                  <div class="form-group" id="q-20" name="q-20" groupRadioRules="required">
+                      <p class="question">Bạn đang ở nhà/căn hộ thuộc nhóm nào?<span style="color: red">*</span></p>
+                      <input type="radio" id="q-20-1" name="q-20" value="Nhà ở xã hội, thuộc sở hữu của cá nhân/vợ chồng/bố mẹ" />
+                      <label for="html">Nhà ở xã hội, thuộc sở hữu của cá nhân/vợ chồng/bố mẹ</label>
+                      <br />
+                      <input type="radio" id="q-20-2" name="q-20" value="Không phải nhà thuộc nhóm “nhà ở xã hội”, thuộc sở hữu của cá nhân/vợ chồng/bố mẹ" />
+                      <label for="css">Không phải nhà thuộc nhóm “nhà ở xã hội”, thuộc sở hữu của cá nhân/vợ chồng/bố mẹ</label>
+                      <br />
+                      <input type="radio" id="q-20-3" name="q-20" value="Ở nhờ nhà người thân (không phải vợ chồng/bố mẹ)" />
+                      <label for="javascript">Ở nhờ nhà người thân (không phải vợ chồng/bố mẹ)</label>
+                      <br />
+
+                      <input type="radio" id="q-20-4" name="q-20" value="Sở hữu của tập thể (ví dụ: nhà tập thể cho cán bộ, người lao động...)" />
+                      <label for="javascript">Sở hữu của tập thể (ví dụ: nhà tập thể cho cán bộ, người lao động...)</label>
+                      <br />
+
+                      <input type="radio" id="q-20-5" name="q-20" value="Thuê nhà thuộc sở hữu của nhà nước" />
+                      <label for="javascript">Thuê nhà thuộc sở hữu của nhà nước</label>
+                      <br />
+
+                      <input type="radio" id="q-20-6" name="q-20" value="Thuê nhà thuộc sở hữu của tư nhân" />
+                      <label for="javascript">Thuê nhà thuộc sở hữu của tư nhân</label>
+                      <br />
+
+                      <div class="more-ans-group" style="display: flex">
+                        <input type="radio" id="q-20-5" class="more-ans-radio" name="q-20" value="more-ans" />
+                        <textarea maxlength="1000" id="more-ans-input" class="more-ans-input more-ans-input-line" placeholder="Khác (vui lòng nêu rõ)"></textarea>
+                      </div>
+                      <p class="counter d-none">0<span>/1000</span></p>
+                      <p class="form-message"></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="form-group" id="q-21" name="q-21" groupRadioRules="required">
+                    <p class="question">Bạn có kế hoạch mua/thuê nhà/căn hộ nào sau đây?<span style="color: red">*</span></p>
+                    <input type="radio" id="q-21-1" name="q-21" value="Mua nhà ở xã hội" />
+                    <label for="html">Mua nhà ở xã hội</label>
+                    <br />
+
+                    <input type="radio" id="q-21-2" name="q-21" value="Mua nhà ở không phải nhà xã hội" />
+                    <label for="css">Mua nhà ở không phải nhà xã hội</label>
+                    <br />
+
+                    <input type="radio" id="q-21-3" name="q-21" value="Thuê nhà ở xã hội tại tỉnh/thành phố đang làm việc/đang tìm việc làm" />
+                    <label for="css">Thuê nhà ở xã hội tại tỉnh/thành phố đang làm việc/đang tìm việc làm</label>
+                    <br />
+                    
+                    <p class="form-message"></p>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <div class="form-group" name="q-22" id="q-22">
+                    <p class="question">Bạn có thể tiết kiệm bao nhiêu tiền mỗi tháng để cho kế hoạch mua nhà?<span style="color: red">*</span>
+                    </p>
+                    <div class="px-app px-dropdown">
+                      <div class="px-dropdown-input">
+                        <input type="text" rules="required" class="form-control money" name="money" placeholder="Nhập số tiền (VNĐ)" />
+                      </div>
+                    </div>
+                    <p class="form-message"></p>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <div class="form-group" id="q-23" name="q-23" groupRadioRules="required">
+                    <p class="question">Nếu vay mua nhà bạn có thể trả lãi vay trong bao lâu?<span style="color: red">*</span></p>
+                    
+                    <input type="radio" id="q-23-1" name="q-23" value="Ít hơn 5 năm" />
+                    <label for="html">Ít hơn 5 năm</label>
+                    <br />
+
+                    <input type="radio" id="q-23-2" name="q-23" value="6-10 năm" />
+                    <label for="css">6-10 năm</label>
+                    <br />
+
+                    <input type="radio" id="q-23-3" name="q-23" value="11-15 năm" />
+                    <label for="css">11-15 năm</label>
+                    <br />
+
+                    <input type="radio" id="q-23-4" name="q-23" value="16-20 năm" />
+                    <label for="css">16-20 năm</label>
+                    <br />
+
+                    <input type="radio" id="q-23-5" name="q-23" value="11-15 năm" />
+                    <label for="css">21-25 năm</label>
+                    <br /> 
+
+                    <input type="radio" id="q-23-6" name="q-23" value="26-30 năm" />
+                    <label for="css">26-30 năm</label>
+                    <br />
+                    
+                    <p class="form-message"></p>
+                  </div>
+                </div>
+
+
+
+                <div class="card">
+                  <div class="form-group one-info" numberSelected="1000" name="q-24" id="q-24" groupCheckboxRules="required">
+                    <p class="question">Bạn thấy đâu là khó khăn / thách thức nhất khi mua nhà ở xã hội (có thể chọn tối đa 2 đáp án)<span style="color: red">*</span></p>
+                    <div name="q-24">
+                      <input type="checkbox" id="q-24-1" name="q-24" value="Thiếu tài chính sẵn có cho khoản đóng góp ban đầu" />
+                      <label for="vehicle1">Thiếu tài chính sẵn có cho khoản đóng góp ban đầu</label>
+                      <br />
+
+                      <input type="checkbox" id="q-24-2" name="q-24" value="Không đủ điều kiện để là đối tượng được mua nhà ở xã hội" />
+                      <label for="vehicle2">Không đủ điều kiện để là đối tượng được mua nhà ở xã hội</label>
+                      <br />
+
+                      <input type="checkbox" id="q-24-3" name="q-24" value="Hồ sơ giấy tờ chứng minh phức tạp" />
+                      <label for="vehicle2">Hồ sơ giấy tờ chứng minh phức tạp</label>
+                      <br />
+
+                      <input type="checkbox" id="q-24-4" name="q-24" value="Khó cạnh tranh suất mua" />
+                      <label for="vehicle2">Khó cạnh tranh suất mua</label>
+                      <br />
+
+                      <input type="checkbox" id="q-24-5" name="q-24" value="Phải trả tiền chênh mới mua được" />
+                      <label for="vehicle2">Phải trả tiền chênh mới mua được</label>
+                      <br />
+
+                      <input type="checkbox" id="q-24-6" name="q-24" value="Khó tiếp cận vốn vay để mua" />
+                      <label for="vehicle2">Khó tiếp cận vốn vay để mua</label>
+                      <br />
+
+
+                      <input type="checkbox" id="q-24-7" name="q-24" value="Khó tìm được dự án hợp lý về vị trí" />
+                      <label for="vehicle2">Khó tìm được dự án hợp lý về vị trí</label>
+                      <br />
+
+                      <div class="more-ans-group" style="display: flex">
+                        <input type="checkbox" id="more-ans-check-box" class="more-ans-check-box" name="q-24" value="more-ans" />
+                        <textarea maxlength="1000" id="more-ans-input" class="more-ans-input more-ans-input-line" placeholder="Khác (vui lòng nêu rõ)"></textarea>
+                      </div>
+                      <p  class="counter d-none">0<span>/1000</span></p>
+                    </div>
+
+                    <p class="form-message"></p>
+                  </div>
+                </div>
+
+
+
+                <div class="card">
+                  <div class="form-group" id="q-25" name="q-25" groupRadioRules="required">
+                    <p class="question">Nếu phải bỏ tiền chênh để mua nhà ở xã hội, bạn có sẵn sàng không?<span style="color: red">*</span></p>
+                    
+                    <input type="radio" id="q-25-1" name="q-25" value="Không" />
+                    <label for="html">Không</label>
+                    <br />
+
+                    <input type="radio" id="q-25-2" name="q-25" value="Có" />
+                    <label for="css">Có</label>
+                    <br />
+
+                    <p class="form-message"></p>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <div class="form-group" name="q-26" id="q-26">
+                    <p class="question">Nơi Bạn muốn mua/thuê nhà trong thời gian tới?<span style="color: red">*</span></p>
+                    <div class="px-app px-dropdown">
+                      <input class="px-dropdown-value" type="hidden" />
+                      <div class="px-dropdown-input">
+                        <input class="input-city" type="text" readonly rules="required" class="form-control" name="dv" />
+                        <i class="fa fa-caret-down icon"></i>
+                      </div>
+                      <div class="px-dropdown-panel">
+                        <ul class="city"></ul>
+                      </div>
+                    </div>
+                    <p class="form-message"></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="form-group form-group-maxWidth one-info" name="q-27" id="q-27">
+                    <p class="question" style="display: block">Bạn muốn kiến nghị gì với Chính quyền địa phương/Chính phủ về vấn đề liên quan đến việc làm, bảo hiểm xã hội, mua/thuê nhà ở xã hội?</p>
+                    <div class="px-app px-dropdown area-input">
+                      <div class="text-area">
+                        <textarea maxlength="100" class="form-control" placeholder="Nhập câu trả lời của bạn"></textarea>
+                      </div>
+                      <p class="form-message"></p>
+                    </div>
+                    <p class="counter d-none">0<span>/1000</span></p>
+                  </div>
+                </div>
+
+
+              </div>
+             
+                 <!-- // end - Section - 4  -->
+
+
+              <!-- // start - Section - 5  -->
+
+              <div id="section_5" class="d-none" isGet="false">
+                <div class="card">
+                  <div class="header_area">
+                    <p class="header">Thông tin người tham gia khảo sát</p>
+                  </div>
+                  <div class="form-group" name="q-28" id="q-28">
+                    <p class="question">Nơi bạn đang ở?<span style="color: red">*</span></p>
+                    <div class="px-app px-dropdown">
+                      <input class="px-dropdown-value" type="hidden" />
+                      <div class="px-dropdown-input">
+                        <input class="input-city" type="text" readonly rules="required" class="form-control" name="dv" />
+                        <i class="fa fa-caret-down icon"></i>
+                      </div>
+                      <div class="px-dropdown-panel">
+                        <ul class="city"></ul>
+                      </div>
+                    </div>
+                    <p class="form-message"></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="form-group" name="q-29" id="q-29">
+                    <p class="question">Bạn thuộc nhóm tuổi nào?<span style="color: red">*</span>
+                    </p>
+                    <div class="px-app px-dropdown">
+                      <input class="px-dropdown-value" type="hidden" />
+                      <div class="px-dropdown-input">
+                        <input type="text" readonly rules="required" class="form-control" name="dv" />
+                        <i class="fa fa-caret-down icon"></i>
+                      </div>
+                      <div class="px-dropdown-panel">
+                        <ul class="old-range"></ul>
+                      </div>
+                    </div>
+                    <p class="form-message"></p>
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <div class="form-group" id="q-30" name="q-30" groupRadioRules="required">
+                    <p class="question">Bạn đã tốt nghiệp/đạt được trình độ giáo dục, đào tạo CAO NHẤT nào?<span style="color: red">*</span></p>
+                    
+                    <input type="radio" id="q-30-1" name="q-30" value="Không có trình độ nghề/kỹ năng nghề" />
+                    <label for="html">Không có trình độ nghề/kỹ năng nghề</label>
+                    <br />
+
+                    <input type="radio" id="q-30-2" name="q-30" value="Trung học cơ sở (cấp 2)" />
+                    <label for="css">Trung học cơ sở (cấp 2)</label>
+                    <br />
+
+                    <input type="radio" id="q-30-3" name="q-30" value="Trung học phổ thông (cấp 3)" />
+                    <label for="css">Trung học phổ thông (cấp 3)</label>
+                    <br />
+
+                    <input type="radio" id="q-30-4" name="q-30" value="Sơ cấp nghề" />
+                    <label for="css">Sơ cấp nghề</label>
+                    <br />
+
+                    <input type="radio" id="q-30-5" name="q-30" value="Trung cấp nghề" />
+                    <label for="css">Trung cấp nghề</label>
+                    <br /> 
+
+                    <input type="radio" id="q-30-6" name="q-30" value="Cao đẳng nghề" />
+                    <label for="css">Cao đẳng nghề</label>
+                    <br />
+
+                    <input type="radio" id="q-30-7" name="q-30" value="Bằng Đại học" />
+                    <label for="css">Bằng Đại học</label>
+                    <br />
+
+                    <input type="radio" id="q-30-8" name="q-30" value="Bằng Thạc sĩ" />
+                    <label for="css">Bằng Thạc sĩ</label>
+                    <br />
+
+                    <input type="radio" id="q-30-9" name="q-30" value="Bằng Tiến sĩ" />
+                    <label for="css">Bằng Tiến sĩ</label>
+                    <br />
+                    
+                    <p class="form-message"></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="form-group" name="q-31" id="q-31">
+                    <p class="question">Nếu muốn nhận Kết quả khảo sát chi tiết và Bản tổng hợp kiến nghị gửi Thủ tướng, bạn vui lòng để lại địa chỉ email</p>
+                    <div class="px-app px-dropdown">
+                      <div class="px-dropdown-input">
+                        <input type="text" rules="email" class="form-control" name="email" />
+                      </div>
+                    </div>
+                    <p class="form-message"></p>
+                  </div>
+                </div>
+
+              </div>
+              <!-- // end - Section - 5  -->
             </form>
             <div class="btn_nav_area">
-              <button class="btn-submit form-submit btn-nav-next buttonload">Gửi khảo sát<i id="icon-loading" class="fa fa-spinner fa-spin"></i></button>
+              
               <button id="btn-nav-back" class="d-none btn btn-nav-back">Quay lại</button>
               <button id="btn-nav-next" class="btn btn-nav-next">Tiếp tục</button>
+              <button class="btn-submit form-submit btn-nav-next buttonload">Gửi khảo sát<i id="icon-loading" class="fa fa-spinner fa-spin"></i></button>
             </div>
             <!-- <button id="sweet">Sweetalert</button> -->
           </div>
