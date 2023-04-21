@@ -372,6 +372,9 @@ input[type="number"] {
   align-items: center;
   justify-content: center; }
 
+.swal2-popup .swal2-title {
+  margin-bottom: 0 !important; }
+
 .soLanRut {
   flex-wrap: wrap;
   gap: 7px; }
