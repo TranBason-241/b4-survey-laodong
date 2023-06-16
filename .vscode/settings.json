@@ -1,5 +1,6 @@
 {
   "editor.wordWrapColumn": 1200,
   "editor.wordWrap": "on",
-  "interactiveSession.editor.wordWrap": "on"
+  "interactiveSession.editor.wordWrap": "on",
+  "liveServer.settings.port": 5501
 }
